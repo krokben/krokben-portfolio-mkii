@@ -1,7 +1,7 @@
 import { FETCH_SKILLS } from '../actions/types';
 
 const initialState = {
-  items: []
+  items: [],
 };
 
 export default function (state = initialState, action) {
@@ -9,7 +9,7 @@ export default function (state = initialState, action) {
     case FETCH_SKILLS:
       return {
         ...state,
-        items: action.payload
+        items: action.payload,
       };
     default:
       return state;
