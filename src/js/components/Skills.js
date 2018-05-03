@@ -26,11 +26,11 @@ class Skills extends Component {
 
 Skills.propTypes = {
   fetchSkills: PropTypes.func.isRequired,
-  skills: PropTypes.array.isRequired
-}
+  skills: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 const mapStateToProps = state => ({
-  skills: state.skills.items
+  skills: state.skills.items,
 });
 
 export default connect(mapStateToProps, { fetchSkills })(Skills);
