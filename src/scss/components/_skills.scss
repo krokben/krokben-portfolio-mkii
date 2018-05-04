@@ -1,0 +1,12 @@
+.skills__wrapper {
+  padding: map-get($space, 'base');
+}
+
+.skills {
+  background: #27ae60;
+  padding: map-get($space, 'base');
+}
+
+.skills__header {
+  font-family: Helvetica;
+}
