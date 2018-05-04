@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import BEMHHelper from 'react-bem-helper';
 import { fetchSkills } from '../actions/skillActions';
+
+const bem = new BEMHHelper({ name: 'skills' });
 
 class Skills extends Component {
   componentWillMount() {
@@ -16,8 +19,8 @@ class Skills extends Component {
       </div>
     ));
     return (
-      <div>
-        <h2>Skills</h2>
+      <div {...bem()}>
+        <h2 {...bem('header')}>Skills</h2>
         {skills}
       </div>
     );
