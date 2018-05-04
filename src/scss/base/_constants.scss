@@ -4,7 +4,8 @@ $color: (
 
 $font-size: (
   base: 1.6rem,
-  headline: 6.4rem,
+  subtitle: 3.2rem,
+  title: 6.4rem,
 );
 
 $space: (
@@ -14,6 +15,5 @@ $space: (
 /* Fonts */
 
 $roboto: 'Roboto', sans-serif;
-$roboto-slab: 'Roboto Slab:400', serif;
-$roboto-slab-bold: 'Roboto Slab:700', serif;
+$roboto-slab: 'Roboto Slab', serif;
 $share-tech-mono: 'Share Tech Mono', monospace;

@@ -10,11 +10,23 @@ body {
   font-family: $roboto-slab;
   font-size: 16px;
   font-size: map-get($font-size, 'base');
+  line-height: 2;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1;
   margin: 0;
 }
 
 h1 {
-  color: #fff;
-  font-size: map-get($font-size, 'headline');
-  text-align: center;
+  font-size: map-get($font-size, 'title');
+}
+
+h2 {
+  font-size: map-get($font-size, 'subtitle');
+}
+
+p {
+  margin: 0;
 }
