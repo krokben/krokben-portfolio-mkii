@@ -19,9 +19,11 @@ class Skills extends Component {
       </div>
     ));
     return (
-      <div {...bem()}>
-        <h2 {...bem('header')}>Skills</h2>
-        {skills}
+      <div {...bem('wrapper')}>
+        <div {...bem()}>
+          <h2 {...bem('header')}>Skills</h2>
+          {skills}
+        </div>
       </div>
     );
   }
