@@ -5,6 +5,7 @@ import Hamburger from './components/Hamburger';
 import Navbar from './components/Navbar';
 import Intro from './components/Intro';
 import Arrow from './components/Arrow';
+import About from './components/About';
 import Skills from './components/Skills';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Navbar />
         <Intro />
         <Arrow />
+        <About />
         <Skills />
       </div>
     </Provider>

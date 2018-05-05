@@ -10,14 +10,19 @@ const Hamburger = props => (
   <div
     {...bem(null, props.display)}
     onClick={props.displayNavbar}
+    role="presentation"
   >
     ☰
   </div>
 );
 
 Hamburger.propTypes = {
-  display: PropTypes.string.isRequired,
+  display: PropTypes.string,
   displayNavbar: PropTypes.func.isRequired,
+};
+
+Hamburger.defaultProps = {
+  display: null,
 };
 
 const mapStateToProps = state => ({

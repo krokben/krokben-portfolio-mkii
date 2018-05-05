@@ -18,7 +18,11 @@ const Navbar = props => (
 );
 
 Navbar.propTypes = {
-  display: PropTypes.string.isRequired,
+  display: PropTypes.string,
+};
+
+Navbar.defaultProps = {
+  display: null,
 };
 
 const mapStateToProps = state => ({
