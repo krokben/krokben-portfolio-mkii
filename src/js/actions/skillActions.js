@@ -1,10 +1,10 @@
+import client from '../helpers/client';
 import { FETCH_SKILLS } from './types';
 
 export const fetchSkills = () => (dispatch) => {
-  fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(posts => dispatch({
+  client.getEntry('27TBtHc1aA8KSSQkyQE6cC')
+    .then(entry => dispatch({
       type: FETCH_SKILLS,
-      payload: posts,
+      payload: entry.fields.skills,
     }));
 };

@@ -13,9 +13,9 @@ class Skills extends Component {
 
   render() {
     const skills = this.props.skills.map(skill => (
-      <div key={skill.id}>
+      <div key={`skill-${skill.title}`}>
         <h3>{skill.title}</h3>
-        <p>{skill.body}</p>
+        <p>{skill.value}</p>
       </div>
     ));
     return (
