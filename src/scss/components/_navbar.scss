@@ -1,0 +1,46 @@
+.navbar {
+  align-items: center;
+  background-color: #000;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-size: 9.6rem;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  transition: width 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  top: 0;
+  width: 0;
+}
+
+.navbar--active {
+  width: 100%;
+}
+
+.navbar--active .navbar__list {
+  width: auto;
+}
+
+.navbar__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: width 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  width: 0;
+}
+
+.navbar__item {
+  line-height: 1.25;
+}
+
+.navbar__link {
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover {
+    color: map-get($color, 'shamrock');
+  }
+}
