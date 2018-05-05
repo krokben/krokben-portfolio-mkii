@@ -12,11 +12,17 @@ export default function Arrow() {
         </div>
         <div {...bem('text-wrapper')}>
           <div {...bem('text-container')}>
-            <h2 {...bem('title')}>tommy svensson</h2>
+            <h2 {...bem('title')}>Tommy Svensson</h2>
             <p {...bem('info')}>
-              Knackar kod och kommer med kreativa lösningar.&nbsp;
-              Gillar fin och strukturerad kod, ny teknik och minimalistisk design.&nbsp;
-              Har spenderat några år i Berlin och Tokyo. Studerar frontend på KYH i Stockholm.
+              Swedish guy who&nbsp;
+              studied 2 years of Front end development at KYH in Stockholm.&nbsp;
+              Well versed in technologies such as React, Redux, Webpack 4, SASS,&nbsp;
+              Contentful, Craft CMS. 7 months experience of working agile in a team&nbsp;
+              at an agency in Berlin with designers and other developers.&nbsp;
+              Have studied music (piano) for several years as well as Japanese.&nbsp;
+              Somewhat active in the electronic music scene in Berlin.&nbsp;
+              Really excited about everything JavaScript.&nbsp;
+              <span role="img" aria-label="Nerd smiley">🤓</span>
             </p>
           </div>
         </div>
