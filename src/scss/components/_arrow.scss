@@ -7,5 +7,11 @@
   height: 50px;
   position: absolute;
   right: 10%;
+  transition: background-color 0.5s 0.1s;
   width: 50px;
+
+  &:hover {
+    background-color: map-get($color, 'eucalyptus');
+    transition: background-color 0.5s 0;
+  }
 }
