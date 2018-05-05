@@ -3,7 +3,7 @@
 }
 
 .skills {
-  background: #27ae60;
+  background: map-get($color, 'jungle-green');
   padding: map-get($space, 'base');
 }
 
