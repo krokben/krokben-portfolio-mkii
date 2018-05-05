@@ -2,8 +2,23 @@
   background-color: map-get($color, 'jungle-green');
   clip-path: polygon(0% 100%, 0% 0%, 90% 0%, 90% 50%, 84% 70%, 84% 100%, 85% 100%, 85% 70.5%, 91% 50.5%, 91% 0%, 100% 0%, 100% 100%, 0% 100%);
   height: 100vh;
+  position: relative;
 
   @include media('>landscape') {
     clip-path: polygon(0% 0%, 63% 0%, 63% 30%, 69% 50%, 69% 100%, 70% 100%, 70% 49.5%, 64% 29.5%, 64% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.about__message {
+  bottom: 1rem;
+  color: #fff;
+  font-size: map-get($font-size, 'sesqui');
+  font-style: italic;
+  font-weight: 700;
+  position: absolute;
+  right: 1rem;
+
+  span {
+    color: map-get($color, 'shamrock');
   }
 }

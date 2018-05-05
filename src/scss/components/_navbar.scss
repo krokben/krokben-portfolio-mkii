@@ -6,11 +6,12 @@
   display: flex;
   font-size: map-get($font-size, 'quadruple');
   justify-content: center;
-  position: absolute;
+  position: fixed;
   right: 0;
   transition: width 1s;
   top: 0;
   width: 0;
+  z-index: map-get($z-index, 'navbar');
 
   @include media('>mobile') {
     font-size: map-get($font-size, 'hextuple');
@@ -22,16 +23,18 @@
 }
 
 .navbar--active .navbar__list {
-  width: auto;
+  opacity: 1;
+  visibility: visible;
 }
 
 .navbar__list {
   list-style-type: none;
   margin: 0;
+  opacity: 0;
   padding: 0;
   text-align: center;
-  transition: width 1s;
-  width: 0;
+  transition: opacity 2.5s;
+  visibility: hidden;
 }
 
 .navbar__item {

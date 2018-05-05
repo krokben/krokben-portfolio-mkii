@@ -11,14 +11,14 @@ import Skills from './components/Skills';
 export default function App() {
   return (
     <Provider store={store}>
-      <div>
+      <main>
         <Hamburger />
         <Navbar />
         <Intro />
         <Arrow />
         <About />
         <Skills />
-      </div>
+      </main>
     </Provider>
   );
 }
