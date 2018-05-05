@@ -15,7 +15,7 @@ export default function Arrow() {
             <h2 {...bem('title')}>Tommy Svensson</h2>
             <p {...bem('info')}>
               Swedish guy who&nbsp;
-              studied 2 years of Front end development at KYH in Stockholm.&nbsp;
+              studied 2 years of Front End Development at KYH in Stockholm.&nbsp;
               Well versed in technologies such as React, Redux, Webpack 4, SASS,&nbsp;
               Contentful, Craft CMS. 7 months experience of working agile in a team&nbsp;
               at an agency in Berlin with designers and other developers.&nbsp;
