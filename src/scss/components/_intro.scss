@@ -1,12 +1,8 @@
 .intro {
   align-items: center;
   display: flex;
-  height: 95vh;
+  height: 96vh;
   justify-content: center;
-}
-
-.intro__banner {
-  
 }
 
 .intro__title,
@@ -14,16 +10,3 @@
   color: #fff;
   text-align: center;
 }
-
-.intro__title {
-  @include media('>mobile') {
-    font-size: map-get($font-size, 'quadruple');
-  }
-}
-
-.intro__subtitle {
-  @include media('>mobile') {
-    font-size: map-get($font-size, 'double');
-  }
-}
-

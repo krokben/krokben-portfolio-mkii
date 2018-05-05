@@ -1,7 +1,7 @@
 .hamburger {
   color: map-get($color, 'jungle-green');
   cursor: pointer;
-  font-size: map-get($font-size, 'triple');
+  font-size: map-get($size, 'triple');
   font-weight: 700;
   line-height: 1;
   position: absolute;
@@ -11,7 +11,7 @@
   z-index: map-get($z-index, 'hamburger');
 
   @include media('>mobile') {
-    font-size: map-get($font-size, 'quadruple');
+    font-size: map-get($size, 'quadruple');
   }
 
   &:hover {

@@ -11,22 +11,29 @@ body {
   box-sizing: border-box;
   font-family: $roboto-slab;
   font-size: 16px;
-  font-size: map-get($font-size, 'base');
-  line-height: 2;
-  margin: 0;
-}
-
-h1, h2, h3, h4 {
+  font-size: map-get($size, 'base');
   line-height: 1;
   margin: 0;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 h1 {
-  font-size: map-get($font-size, 'triple');
+  font-size: map-get($size, 'triple');
+
+  @include media('>mobile') {
+    font-size: map-get($size, 'quadruple');
+  }
 }
 
 h2 {
-  font-size: map-get($font-size, 'sesqui');
+  font-size: map-get($size, 'sesqui');
+
+  @include media('>mobile') {
+    font-size: map-get($size, 'double');
+  }
 }
 
 p {

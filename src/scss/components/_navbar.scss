@@ -4,7 +4,7 @@
   bottom: 0;
   color: #fff;
   display: flex;
-  font-size: map-get($font-size, 'quadruple');
+  font-size: map-get($size, 'quadruple');
   justify-content: center;
   position: fixed;
   right: 0;
@@ -14,7 +14,7 @@
   z-index: map-get($z-index, 'navbar');
 
   @include media('>mobile') {
-    font-size: map-get($font-size, 'hextuple');
+    font-size: map-get($size, 'hextuple');
   }
 }
 

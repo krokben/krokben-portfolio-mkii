@@ -1,18 +1,88 @@
 .about {
   background-color: map-get($color, 'jungle-green');
-  clip-path: polygon(0% 100%, 0% 0%, 90% 0%, 90% 50%, 84% 70%, 84% 100%, 85% 100%, 85% 70.5%, 91% 50.5%, 91% 0%, 100% 0%, 100% 100%, 0% 100%);
   height: 100vh;
+  padding: map-get($size, 'sesqui');
   position: relative;
+
+  @include media('>700px') {
+    clip-path: polygon(0% 100%, 0% 0%, 90% 0%, 90% 50%, 84% 70%, 84% 100%, 85% 100%, 85% 70.5%, 91% 50.5%, 91% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 
   @include media('>landscape') {
     clip-path: polygon(0% 0%, 63% 0%, 63% 30%, 69% 50%, 69% 100%, 70% 100%, 70% 49.5%, 64% 29.5%, 64% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
+.about__blurb {
+  display: flex;
+  flex-direction: column;
+
+  @include media('>tablet') {
+    flex-direction: row;
+  }
+}
+
+.about__portrait-wrapper {
+  margin-bottom: map-get($size, 'base');
+
+  @include media('>tablet') {
+    margin-right: map-get($size, 'base');
+  }
+}
+
+.about__portrait {
+  background-attachment: fixed;
+  background-color: #000;
+  background-image: url(http://fillmurray.com/500/500);
+  background-position: 0;
+  background-repeat: no-repeat;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 200px;
+  margin: auto;
+  width: 200px;
+
+  @include media('>tablet') {
+    height: 250px;
+    margin-right: map-get($size, 'base');
+    width: 250px;
+  }
+}
+
+.about__text-wrapper {
+  text-align: justify;
+
+  @include media('>tablet') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    text-align: left;
+  }
+}
+
+.about__text-container {
+  border-bottom: 2px solid #fff;
+  padding-bottom: map-get($size, 'sesqui');
+}
+
+.about__title {
+  line-height: 1.5;
+  text-align: center;
+
+  @include media('>tablet') {
+    text-align: left;
+  }
+}
+
+.about__info {
+  
+}
+
 .about__message {
   bottom: 1rem;
   color: #fff;
-  font-size: map-get($font-size, 'sesqui');
+  font-size: map-get($size, 'sesqui');
   font-style: italic;
   font-weight: 700;
   position: absolute;

@@ -1,10 +1,10 @@
 .skills__wrapper {
-  padding: map-get($space, 'base');
+  padding: map-get($size, 'base');
 }
 
 .skills {
   background: map-get($color, 'jungle-green');
-  padding: map-get($space, 'base');
+  padding: map-get($size, 'base');
 }
 
 .skills__header {
