@@ -1,15 +1,18 @@
 .hamburger {
   color: map-get($color, 'jungle-green');
   cursor: pointer;
-  font-size: 6.4rem;
+  font-size: map-get($font-size, 'triple');
   font-weight: 700;
   line-height: 1;
   position: absolute;
-  top: 2.8rem;
+  top: 2rem;
   transition: color 0.5s 0.1s;
-  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   right: 2.8rem;
   z-index: 1;
+
+  @include media('>mobile') {
+    font-size: map-get($font-size, 'quadruple');
+  }
 
   &:hover {
     color: #fff;

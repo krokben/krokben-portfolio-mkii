@@ -1,0 +1,12 @@
+@mixin animation ($animation, $duration, $transition, $iteration) {
+  animation-duration: $duration;
+  animation-iteration-count: $iteration;
+  transition-timing-function: $transition;
+  animation-name: $animation;
+}
+
+@mixin keyframe ($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
