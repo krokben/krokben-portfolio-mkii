@@ -4,7 +4,7 @@
   bottom: 0;
   color: #fff;
   display: flex;
-  font-size: 9.6rem;
+  font-size: map-get($font-size, 'quadruple');
   justify-content: center;
   position: absolute;
   right: 0;
@@ -12,6 +12,10 @@
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   top: 0;
   width: 0;
+
+  @include media('>mobile') {
+    font-size: map-get($font-size, 'hextuple');
+  }
 }
 
 .navbar--active {

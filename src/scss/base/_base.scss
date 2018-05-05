@@ -20,11 +20,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: map-get($font-size, 'title');
+  font-size: map-get($font-size, 'triple');
 }
 
 h2 {
-  font-size: map-get($font-size, 'subtitle');
+  font-size: map-get($font-size, 'sesqui');
 }
 
 p {

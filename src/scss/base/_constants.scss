@@ -1,3 +1,9 @@
+$breakpoints: (
+  mobile: 400px,
+  tablet: 600px,
+  landscape: 900px,
+);
+
 $color: (
   jungle-green: #27ae60,
   shamrock: #2ecc71,
@@ -5,12 +11,16 @@ $color: (
 
 $font-size: (
   base: 1.6rem,
-  subtitle: 3.2rem,
-  title: 6.4rem,
+  sesqui: 2.4rem,
+  double: 3.2rem,
+  triple: 4.8rem,
+  quadruple: 6.4rem,
+  hextuple: 9.6rem,
 );
 
 $space: (
   base: 1.6rem,
+  hextuple: 9.6rem
 );
 
 /* Fonts */
