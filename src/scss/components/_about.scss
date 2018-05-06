@@ -8,7 +8,7 @@
     clip-path: polygon(0% 100%, 0% 0%, 90% 0%, 90% 50%, 84% 70%, 84% 100%, 85% 100%, 85% 70.5%, 91% 50.5%, 91% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 
-  @include media('>landscape') {
+  @include media('>desktop') {
     clip-path: polygon(0% 0%, 63% 0%, 63% 30%, 69% 50%, 69% 100%, 70% 100%, 70% 49.5%, 64% 29.5%, 64% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
@@ -56,14 +56,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    max-width: 44vw;
     text-align: left;
+  }
+
+  @include media('>landscape') {
+    max-width: 54vw;
+  }
+
+  @include media('>desktop') {
+    max-width: 35vw;
   }
 }
 
 .about__text-container {
   border-bottom: 2px solid #fff;
-  padding-bottom: map-get($size, 'sesqui');
+  padding-bottom: map-get($size, 'base');
 }
 
 .about__title {
@@ -75,18 +83,22 @@
   }
 }
 
-.about__info {
-  
-}
-
 .about__message {
-  bottom: 1rem;
+  bottom: map-get($size, 'base');
   color: #fff;
   font-size: map-get($size, 'sesqui');
   font-style: italic;
   font-weight: 700;
   position: absolute;
-  right: 1rem;
+  right: map-get($size, 'base');
+  
+  @include media('>tablet') {
+    right: 17vw;
+  }
+
+  @include media('>desktop') {
+    right: map-get($size, 'base');
+  }
 
   span {
     color: map-get($color, 'shamrock');
