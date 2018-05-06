@@ -1,6 +1,6 @@
 .carousel {
-  border-left: 2px solid map-get($color, 'granny-smith');
-  border-top: 2px solid map-get($color, 'granny-smith');
+  /* carousel appears twice in the markup, but it makes for a nice quadruple border */
+  border: 8px double map-get($color, 'jungle-green');
   height: 400px;
   margin: auto;
   max-width: 600px;

@@ -23,8 +23,15 @@
 .form__button {
   background-color: map-get($color, 'granny-smith');
   border: 5px solid map-get($color, 'jungle-green');
+  cursor: pointer;
   font-family: $roboto-slab;
   font-size: map-get($size, 'sesqui');
   font-weight: 700;
   padding: map-get($size, 'base');
+
+  &:hover {
+    background-color: map-get($color, 'eucalyptus');
+    border: 5px solid map-get($color, 'granny-smith');
+    color: map-get($color, 'granny-smith');
+  }
 }

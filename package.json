@@ -53,6 +53,7 @@
   "dependencies": {
     "contentful": "^6.1.0",
     "pure-react-carousel": "^1.12.1",
-    "react-marked-markdown": "^1.4.6"
+    "react-marked-markdown": "^1.4.6",
+    "react-scroll": "^1.7.9"
   }
 }

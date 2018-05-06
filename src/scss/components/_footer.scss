@@ -1,7 +1,7 @@
 .footer {
   align-items: center;
   background-color: map-get($color, 'jungle-green');
-  color: map-get($color, 'shamrock');
+  color: map-get($color, 'granny-smith');
   display: flex;
   font-size: map-get($size, 'triple');
   font-weight: 700;
@@ -30,8 +30,8 @@
   @include media('>tablet') {
     display: inline-block;
   }
-}
 
-.footer__link {
-  color: map-get($color, 'shamrock');
+  a {
+    color: map-get($color, 'granny-smith');
+  }
 }

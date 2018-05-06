@@ -1,4 +1,4 @@
 .portfolio {
   border-bottom: 2px dashed map-get($color, 'jungle-green');
-  padding: map-get($size, 'triple') 0;
+  padding: map-get($size, 'triple') 0 map-get($size, 'quadruple'); // compensate for quadruple border
 }
