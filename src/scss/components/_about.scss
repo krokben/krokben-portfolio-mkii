@@ -34,7 +34,7 @@
   background-attachment: fixed;
   background-color: #000;
   background-image: url(http://fillmurray.com/500/500);
-  background-position: 0;
+  background-position: center -30px;
   background-repeat: no-repeat;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -43,9 +43,14 @@
   width: 200px;
 
   @include media('>tablet') {
+    background-position: 26px 0;
     height: 250px;
     margin-right: map-get($size, 'base');
     width: 250px;
+  }
+
+  img {
+    visibility: hidden;
   }
 }
 

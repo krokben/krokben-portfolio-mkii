@@ -7,64 +7,40 @@ import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 const bem = new BEMHHelper({ name: 'carousel' });
 
 class Carousel extends Component {
-  componentWillMount() {
-
-  }
-
   render() {
     return (
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
-        totalSlides={3}
+        totalSlides={this.props.portfolio.length}
+        touchEnabled={false}
+        dragEnabled={false}
       >
         <Slider
           {...bem()}
           isPlaying
           interval={2000}
         >
-          <Slide index={0}>
-            <figure {...bem('figure')}>
-              <div
-                {...bem('image')}
-                style={{ backgroundImage: 'url(https://fillmurray.com/200/200)' }}
-              >
-                <img src="https://fillmurray.com/200/200" alt="" />
-              </div>
-              <figcaption {...bem('figcaption')}>
-                <h2>Project 1</h2>
-                <p>This is project number 1.</p>
-              </figcaption>
-            </figure>
-          </Slide>
-          <Slide index={1}>
-            <figure {...bem('figure')}>
-              <div
-                {...bem('image')}
-                style={{ backgroundImage: 'url(https://fillmurray.com/200/200)' }}
-              >
-                <img src="https://fillmurray.com/200/200" alt="" />
-              </div>
-              <figcaption {...bem('figcaption')}>
-                <h2>Project 2</h2>
-                <p>This is project number 2.</p>
-              </figcaption>
-            </figure>
-          </Slide>
-          <Slide index={2}>
-            <figure {...bem('figure')}>
-              <div
-                {...bem('image')}
-                style={{ backgroundImage: 'url(https://fillmurray.com/200/200)' }}
-              >
-                <img src="https://fillmurray.com/200/200" alt="" />
-              </div>
-              <figcaption {...bem('figcaption')}>
-                <h2>Project 3</h2>
-                <p>This is project number 3.</p>
-              </figcaption>
-            </figure>
-          </Slide>
+          {
+            this.props.portfolio.map((item, i) => (
+              <Slide key={`portfolio-item-${i}`} index={i}>
+                <a {...bem('figure-wrapper')} href={item.url} target="_blank" rel="noopener noreferrer">
+                  <figure {...bem('figure')}>
+                    <div
+                      {...bem('image')}
+                      style={{ backgroundImage: `url(${item.image_url})` }}
+                    >
+                      <img src={item.image_url} alt={item.title} />
+                    </div>
+                    <figcaption {...bem('figcaption')}>
+                      <h2>{item.title}</h2>
+                      <p>{item.description}</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </Slide>
+            ))
+          }
         </Slider>
       </CarouselProvider>
     );
@@ -72,11 +48,11 @@ class Carousel extends Component {
 }
 
 Carousel.propTypes = {
-
+  portfolio: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const mapStateToProps = state => ({
-
+  portfolio: state.portfolio.items,
 });
 
-export default connect(mapStateToProps, {})(Carousel);
+export default connect(mapStateToProps)(Carousel);

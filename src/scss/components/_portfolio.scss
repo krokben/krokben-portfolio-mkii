@@ -1,4 +1,10 @@
 .portfolio {
   border-bottom: 2px dashed map-get($color, 'jungle-green');
-  padding: map-get($size, 'triple') 0 map-get($size, 'quadruple'); // compensate for quadruple border
+  padding: map-get($size, 'double') 0 map-get($size, 'quadruple'); // compensate for quadruple border
+}
+
+.portfolio__headline {
+  color: map-get($color, 'eucalyptus');
+  margin-bottom: map-get($size, 'base');
+  text-align: center;
 }

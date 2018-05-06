@@ -11,7 +11,7 @@ export default function Footer() {
       <ul {...bem('list')}>
         {
           links.map(link => (
-            <li {...bem('item')}>
+            <li key={`footer-${link}`} {...bem('item')}>
               <Link
                 {...bem('link')}
                 smooth

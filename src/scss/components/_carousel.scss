@@ -1,9 +1,14 @@
 .carousel {
   /* carousel appears twice in the markup, but it makes for a nice quadruple border */
+  background-color: map-get($color, 'granny-smith');
   border: 8px double map-get($color, 'jungle-green');
   height: 400px;
   margin: auto;
   max-width: 600px;
+}
+
+.carousel__figure-wrapper {
+  text-decoration: none;
 }
 
 .carousel__figure {

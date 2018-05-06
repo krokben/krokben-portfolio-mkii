@@ -20,7 +20,7 @@ class Navbar extends Component {
         <ul {...bem('list')}>
           {
             links.map(link => (
-              <li {...bem('item')}>
+              <li key={`navbar-${link}`} {...bem('item')}>
                 <Link
                   {...bem('link')}
                   smooth
