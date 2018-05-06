@@ -4,5 +4,6 @@
 
 <code>yarn install</code>
 
-The project is not completely ready yet but seems to be working fine in Chrome and Safari on MacOS. It can be viewed here:
+This is still a work in progress, but it seems to be working fine in Chrome and Safari on MacOS. You can see it in action here:
+<br />
 <a href="http://krokben.se/mk2" target="blank" rel="noopener noreferrer">Krokben MKII</a>
