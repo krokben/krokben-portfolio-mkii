@@ -1,0 +1,30 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 456px;
+}
+
+.form__input {
+  border: 5px solid map-get($color, 'jungle-green');
+  font-size: map-get($size, 'base');
+  margin-bottom: map-get($size, 'base');
+  padding: map-get($size, 'base');
+}
+
+.form__textarea {
+  border: 5px solid map-get($color, 'jungle-green');
+  font-size: map-get($size, 'base');
+  height: 160px;
+  margin-bottom: map-get($size, 'base');
+  padding: map-get($size, 'base');
+}
+
+.form__button {
+  background-color: map-get($color, 'granny-smith');
+  border: 5px solid map-get($color, 'jungle-green');
+  font-family: $roboto-slab;
+  font-size: map-get($size, 'sesqui');
+  font-weight: 700;
+  padding: map-get($size, 'base');
+}
