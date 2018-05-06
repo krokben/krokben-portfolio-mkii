@@ -9,6 +9,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Skills />
         <Portfolio />
         <Contact />
+        <Footer />
       </main>
     </Provider>
   );

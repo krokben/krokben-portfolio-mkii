@@ -1,0 +1,37 @@
+.footer {
+  align-items: center;
+  background-color: map-get($color, 'jungle-green');
+  color: map-get($color, 'shamrock');
+  display: flex;
+  font-size: map-get($size, 'triple');
+  font-weight: 700;
+  height: 260px;
+  justify-content: center;
+  padding: map-get($size, 'double') map-get($size, 'base');
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+
+  li:not(:last-child) {
+    &:after {
+      @include media('>tablet') {
+        content: '/';
+        margin: 0 map-get($size, 'base');
+      }
+    }
+  }
+}
+
+.footer__item {
+  text-align: center;
+
+  @include media('>tablet') {
+    display: inline-block;
+  }
+}
+
+.footer__link {
+  color: map-get($color, 'shamrock');
+}
