@@ -3,3 +3,6 @@
 <p>This project is built in <em>React</em> and <em>Redux</em> and fetches content from <em>Contentful</em>. To learn Webpack 4, I made my own boilerplate with the <em>airbnb config</em> for <em>ESLint</em> and <em>mini-css-extract-plugin</em> to compile <em>scss</em> to css.</p>
 
 <code>yarn install</code>
+
+The project is not completely ready yet but seems to be working fine in Chrome and Safari on MacOS. It can be viewed here:
+<a href="http://krokben.se/mk2" target="blank" rel="noopener noreferrer">Krokben MKII</a>
