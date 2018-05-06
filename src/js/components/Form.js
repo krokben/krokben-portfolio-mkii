@@ -56,13 +56,21 @@ export default class Form extends Component {
           title="Must be between 2 - 20 letters."
           ref={input => this.email = input}
         />
-        <textarea
+        <textarea 
           {...bem('textarea')}
           placeholder="message"
           required
           ref={input => this.message = input}
         />
-        <button {...bem('button')}>{this.state.submitButton}</button>
+        {/* <button {...bem('button')} disabled>{this.state.submitButton}</button> */}
+        <a
+          {...bem('github')}
+          href="https://github.com/krokben"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div>visit my github instead!</div>
+        </a>
       </form>
     );
   }

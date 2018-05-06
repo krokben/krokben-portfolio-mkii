@@ -20,7 +20,14 @@
   padding: map-get($size, 'base');
 }
 
-.form__button {
+.form__github {
+  color: map-get($color, 'jungle-green');
+  display: contents;
+  text-align: center;
+  text-decoration: none;
+}
+
+.form__button, .form__github div {
   background-color: map-get($color, 'granny-smith');
   border: 5px solid map-get($color, 'jungle-green');
   cursor: pointer;
