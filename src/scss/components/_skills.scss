@@ -113,6 +113,7 @@
   display: flex;
   flex: 1;
   flex-direction: column-reverse;
+  height: 271px; // needs to be explicitly stated for safari
   
   @include media('>740px') {
     flex-direction: row;
