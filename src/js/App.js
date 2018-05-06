@@ -7,6 +7,7 @@ import Intro from './components/Intro';
 import Arrow from './components/Arrow';
 import About from './components/About';
 import Skills from './components/Skills';
+import Portfolio from './components/Portfolio';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Arrow />
         <About />
         <Skills />
+        <Portfolio />
       </main>
     </Provider>
   );

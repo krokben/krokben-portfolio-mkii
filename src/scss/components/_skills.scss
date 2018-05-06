@@ -8,10 +8,28 @@
 
 .skills {
   background: map-get($color, 'jungle-green');
-  padding: map-get($size, 'base') 0;
+  padding: map-get($size, 'double') 0;
+  position: relative;
   
   @include media('>740px') {
-    padding: map-get($size, 'base');
+    padding: map-get($size, 'triple') map-get($size, 'base');
+  }
+
+  &:after {
+    content: 'My proficiency in...';
+    font-size: map-get($size, 'sesqui');
+    font-weight: 700;
+    left: 4px;
+    position: absolute;
+    transform: rotate(-4deg);
+    top: -6px;
+
+    @include media('>740px') {
+      font-size: map-get($size, 'double');
+      left: -16px;
+      transform: rotate(-16deg);
+      top: 8px;
+    }
   }
 }
 
@@ -26,6 +44,7 @@
 
   @include media('>740px') {
     display: block;
+    max-width: 920px;
     width: 80%;
   }
 }

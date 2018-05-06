@@ -1,9 +1,16 @@
+/* VENDORS */
 @import '~include-media/dist/include-media';
+@import '~pure-react-carousel/dist/react-carousel.es';
 
+/* BASE */
 @import './base/base';
+
+/* COMPONENTS */
 @import './components/hamburger';
 @import './components/navbar';
 @import './components/intro';
 @import './components/arrow';
 @import './components/about';
 @import './components/skills';
+@import './components/portfolio';
+@import './components/carousel';

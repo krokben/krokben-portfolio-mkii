@@ -1,0 +1,28 @@
+.carousel {
+  border-left: 2px solid map-get($color, 'granny-smith');
+  border-top: 2px solid map-get($color, 'granny-smith');
+  height: 400px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.carousel__figure {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+
+  img {
+    visibility: hidden;
+  }
+}
+
+.carousel__figcaption {
+  padding: map-get($size, 'base');
+}

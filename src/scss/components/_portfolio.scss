@@ -1,0 +1,4 @@
+.portfolio {
+  border-bottom: 2px dashed map-get($color, 'jungle-green');
+  padding: map-get($size, 'triple') 0;
+}
