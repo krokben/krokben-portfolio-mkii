@@ -29,14 +29,15 @@ class Skills extends Component {
     );
   }
 
-  createGrades(color, i) {
+  createGrades(bar, i) {
+    const color = i < bar.value ? bar.color : '';
     return (
       <div
         key={`grade-${i}`}
         {...bem('grade')}
         style={{ backgroundColor: color }}
       />
-    )
+    );
   }
 
   render() {
@@ -55,14 +56,14 @@ class Skills extends Component {
             </div>
             <div {...bem('bar', 'top')}>
               {
-                [...Array(this.props.bar1.value)]
-                  .map((grade, i) => this.createGrades(this.props.bar1.color, i))
+                [...Array(10)]
+                  .map((grade, i) => this.createGrades(this.props.bar1, i))
               }
             </div>
             <div {...bem('bar', 'bottom')}>
               {
-                [...Array(this.props.bar2.value)]
-                  .map((grade, i) => this.createGrades(this.props.bar2.color, i))
+                [...Array(10)]
+                  .map((grade, i) => this.createGrades(this.props.bar2, i))
               }
             </div>
             <div {...bem('skills', 'bottom')}>
