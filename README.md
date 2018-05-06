@@ -6,4 +6,4 @@
 
 This is still a work in progress, but it seems to be working fine in Chrome and Safari on MacOS. You can see it in action here:
 <br />
-<a href="http://krokben.se/mk2" target="blank" rel="noopener noreferrer">Krokben MKII</a>
+<a href="http://krokben.se/mk2" target="_blank" rel="noopener noreferrer">Krokben MKII</a>
