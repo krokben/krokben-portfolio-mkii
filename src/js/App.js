@@ -20,11 +20,11 @@ export default class App extends Component {
           <Hamburger />
           <Navbar />
           <Arrow />
-          <Element name="Intro"><Intro /></Element>
-          <Element name="About"><About /></Element>
-          <Element name="Skills"><Skills /></Element>
-          <Element name="Portfolio"><Portfolio /></Element>
-          <Element name="Contact"><Contact /></Element>
+          <Element name="intro"><Intro /></Element>
+          <Element name="about"><About /></Element>
+          <Element name="skills"><Skills /></Element>
+          <Element name="portfolio"><Portfolio /></Element>
+          <Element name="contact"><Contact /></Element>
           <Footer />
         </main>
       </Provider>

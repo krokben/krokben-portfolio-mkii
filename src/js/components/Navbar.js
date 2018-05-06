@@ -1,24 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import BEMHHelper from 'react-bem-helper';
+import { Link } from 'react-scroll';
+import { displayNavbar } from '../actions/navbarActions';
 
 const bem = new BEMHHelper({ name: 'navbar' });
 
-const Navbar = props => (
-  <nav {...bem(null, props.display)}>
-    <ul {...bem('list')}>
-      <li {...bem('item')}><a {...bem('link')}>home</a></li>
-      <li {...bem('item')}><a {...bem('link')}>about</a></li>
-      <li {...bem('item')}><a {...bem('link')}>skills</a></li>
-      <li {...bem('item')}><a {...bem('link')}>portfolio</a></li>
-      <li {...bem('item')}><a {...bem('link')}>contact</a></li>
-    </ul>
-  </nav>
-);
+class Navbar extends Component {
+  handleClick() {
+    this.props.displayNavbar();
+    document.body.classList.toggle('noscroll');
+  }
+
+  render() {
+    const links = ['home', 'about', 'skills', 'portfolio', 'contact'];
+    return (
+      <nav {...bem(null, this.props.display)}>
+        <ul {...bem('list')}>
+          {
+            links.map(link => (
+              <li {...bem('item')}>
+                <Link
+                  {...bem('link')}
+                  smooth
+                  duration={500}
+                  to={link}
+                  onClick={() => this.handleClick()}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    );
+  }
+}
 
 Navbar.propTypes = {
   display: PropTypes.string,
+  displayNavbar: PropTypes.func.isRequired,
 };
 
 Navbar.defaultProps = {
@@ -29,4 +52,4 @@ const mapStateToProps = state => ({
   display: state.navbar.display,
 });
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps, { displayNavbar })(Navbar);

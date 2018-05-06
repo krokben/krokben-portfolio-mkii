@@ -30,8 +30,8 @@
   @include media('>tablet') {
     display: inline-block;
   }
+}
 
-  a {
-    color: map-get($color, 'granny-smith');
-  }
+.footer__link {
+  color: map-get($color, 'granny-smith');
 }
