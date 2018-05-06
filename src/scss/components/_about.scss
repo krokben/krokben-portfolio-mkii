@@ -80,12 +80,42 @@
 }
 
 .about__title {
+  font-size: map-get($size, 'double');
   line-height: 1.5;
   text-align: center;
 
   @include media('>tablet') {
     text-align: left;
   }
+}
+
+.about__info {
+  font-family: $roboto;
+}
+
+.about__tech-stack {
+  color: map-get($color, 'granny-smith');
+  margin: 40px 0 0 60px;
+  max-width: 300px;
+  transform: rotate(-20deg);
+
+  @include media('>tablet') {
+    margin: 130px 0 0 200px;
+  }
+}
+
+.about__tech-stack-headline {
+  font-size: map-get($size, 'double');
+  font-weight: 400;
+}
+
+.about__tech-stack-list {
+  font-family: $roboto;
+  font-size: map-get($size, 'double');
+}
+
+.about__tech-stack-list-item {
+
 }
 
 .about__message {

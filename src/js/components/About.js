@@ -29,6 +29,18 @@ class About extends Component {
             </div>
           </div>
         </div>
+        <div {...bem('tech-stack')}>
+          <h2 {...bem('tech-stack-headline')}>This website is made using:</h2>
+          <ul {...bem('tech-stack-list')}>
+            <li {...bem('tech-stack-list-item')}>React</li>
+            <li {...bem('tech-stack-list-item')}>Redux</li>
+            <li {...bem('tech-stack-list-item')}>SASS</li>
+            <li {...bem('tech-stack-list-item')}>Webpack 4</li>
+            <li {...bem('tech-stack-list-item')}>Babel</li>
+            <li {...bem('tech-stack-list-item')}>ESLint</li>
+            <li {...bem('tech-stack-list-item')}>Contentful</li>
+          </ul>
+        </div>
         <div {...bem('message')}>
           psst!
           <span> keep scrolling...</span>
