@@ -3,6 +3,11 @@
   text-align: center;
 }
 
-.contact__headline {
+.contact__header {
+  @include landing('right');
   margin-bottom: map-get($size, 'base');
+}
+
+.contact__header-question {
+  color: map-get($color, 'eucalyptus');
 }

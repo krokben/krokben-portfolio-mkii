@@ -7,8 +7,10 @@ const bem = new BEMHHelper({ name: 'contact' });
 export default function Contact() {
   return (
     <div {...bem()}>
-      <h3>Got any interesting ideas?</h3>
-      <h2 {...bem('headline')}>Send me a message!</h2>
+      <div {...bem('header')}>
+        <h3 {...bem('header-question')}>Got any interesting ideas?</h3>
+        <h2>Send me a message!</h2>
+      </div>
       <div {...bem('form-container')}>
         <Form />
       </div>

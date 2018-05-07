@@ -1,3 +1,18 @@
+@mixin landing ($from) {
+  transition: transform 1s ease-in-out;
+
+  @if $from == 'left' {
+    transform: translateX(-600px);
+  } @else if $from == 'right' {
+    transform: translateX(600px);
+  }
+}
+
+@mixin fade-out ($time) {
+  opacity: 0;
+  transition: opacity $time ease-in-out;
+}
+
 @mixin animation ($animation, $duration, $transition, $iteration) {
   animation-duration: $duration;
   animation-iteration-count: $iteration;

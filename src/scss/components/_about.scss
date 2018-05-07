@@ -57,6 +57,7 @@
 }
 
 .about__text-wrapper {
+  @include fade-out(1s);
   text-align: justify;
 
   @include media('>tablet') {
@@ -96,6 +97,7 @@
 }
 
 .about__tech-stack {
+  @include fade-out(2s);
   color: map-get($color, 'granny-smith');
   margin: 40px 0 40px 60px;
   max-width: 300px;
@@ -121,6 +123,7 @@
 }
 
 .about__message {
+  @include landing('right');
   bottom: map-get($size, 'half');
   color: #fff;
   font-size: map-get($size, 'sesqui');

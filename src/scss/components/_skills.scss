@@ -74,6 +74,7 @@
 }
 
 .skills__skills--top {
+  @include landing('left');
   margin-left: map-get($size, 'base');
   order: 2;
 
@@ -83,6 +84,7 @@
 }
 
 .skills__skills--bottom {
+  @include landing('right');
   margin-right: map-get($size, 'base');
   order: 3;
 
