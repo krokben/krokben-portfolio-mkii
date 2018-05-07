@@ -1,6 +1,6 @@
 .about {
   background-color: map-get($color, 'jungle-green');
-  height: 96vh;
+  min-height: 96vh;
   padding: map-get($size, 'sesqui');
   position: relative;
 
@@ -97,7 +97,7 @@
 
 .about__tech-stack {
   color: map-get($color, 'granny-smith');
-  margin: 40px 0 0 60px;
+  margin: 40px 0 40px 60px;
   max-width: 300px;
   transform: rotate(-20deg);
 
@@ -121,15 +121,16 @@
 }
 
 .about__message {
-  bottom: map-get($size, 'base');
+  bottom: map-get($size, 'half');
   color: #fff;
   font-size: map-get($size, 'sesqui');
   font-style: italic;
   font-weight: 700;
   position: absolute;
-  right: map-get($size, 'base');
+  right: map-get($size, 'half');
   
   @include media('>tablet') {
+    bottom: map-get($size, 'base');
     right: 17vw;
   }
 

@@ -7,6 +7,7 @@
 
 .form__input {
   border: 5px solid map-get($color, 'jungle-green');
+  font-family: $roboto;
   font-size: map-get($size, 'base');
   margin-bottom: map-get($size, 'base');
   padding: map-get($size, 'base');
@@ -14,6 +15,7 @@
 
 .form__textarea {
   border: 5px solid map-get($color, 'jungle-green');
+  font-family: $roboto;
   font-size: map-get($size, 'base');
   height: 160px;
   margin-bottom: map-get($size, 'base');

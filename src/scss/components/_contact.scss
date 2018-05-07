@@ -1,3 +1,8 @@
 .contact {
   padding: map-get($size, 'double') map-get($size, 'base');
+  text-align: center;
+}
+
+.contact__headline {
+  margin-bottom: map-get($size, 'base');
 }
