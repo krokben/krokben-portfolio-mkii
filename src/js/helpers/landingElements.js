@@ -1,5 +1,8 @@
 export default function landingElements() {
-  /* Query here the elements with landing or fade-out mixin included */
+  /*
+    Query here the elements with landing or fade-out mixin included.
+    Forwarding refs is not possible (?) since there are more than one element per component (see withLanding.js)
+  */
   const aboutTextWrapper = document.querySelector('.about__text-wrapper');
   const aboutMessage = document.querySelector('.about__message');
   const aboutTechStack = document.querySelector('.about__tech-stack');
