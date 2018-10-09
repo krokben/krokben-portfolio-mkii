@@ -1,1 +1,59 @@
-
+{
+  "name": "krokben-portfolio-mkii",
+  "version": "1.0.0",
+  "description": "Krokben portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krokben/krokben-portfolio-mkii.git"
+  },
+  "author": "Tommy Svensson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krokben/krokben-portfolio-mkii/issues"
+  },
+  "homepage": "https://github.com/krokben/krokben-portfolio-mkii#readme",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-2": "*",
+    "css-loader": "*",
+    "dotenv-webpack": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react":"*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "include-media": "*",
+    "mini-css-extract-plugin": "*",
+    "node-sass": "*",
+    "optimize-css-assets-webpack-plugin": "*",
+    "prop-types": "*",
+    "react": "*",
+    "react-bem-helper": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*",
+    "redux-devtools": "*",
+    "redux-thunk": "*",
+    "sass-loader": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "contentful": "*",
+    "pure-react-carousel": "*",
+    "react-marked-markdown": "*",
+    "react-scroll": "*"
+  }
+}
